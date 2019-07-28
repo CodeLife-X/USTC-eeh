@@ -21,7 +21,7 @@
             <h3><a href="#">内容大纲</a></h3>
             <ul>
                 {% for key, value in dir.items() %}
-                 <li class="toctree-l1"><a class="reference internal" href="{{ value }}">{{ key }}:{{ loop.index }}</a></li>
+                 <li class="toctree-l1"><a class="reference internal" href="{{ value }}">{{ key }}</a></li>
                 {% endfor %}
             </ul>
             <div id="searchbox" style="display: none" role="search">
