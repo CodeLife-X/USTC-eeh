@@ -1,3 +1,5 @@
+#!/usr/bin/python
+# -*- coding: UTF-8 -*-
 class List(object):
     Dir = {
         '课程体系介绍': '',
