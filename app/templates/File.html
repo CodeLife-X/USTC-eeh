@@ -1,0 +1,46 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+    <div class="documentwrapper">
+        <div class="bodywrapper">
+            <div class="body" role="main">
+                <div class="section">
+                {% block File_content %}
+
+
+
+                {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sphinxsidebar" >
+        <div class="sphinxsidebarwrapper" >
+            <p class="loogo">
+                USTC
+            </p>
+            <h3><a href="#">内容大纲</a></h3>
+            <ul>
+                {% for dia in dir %}
+                 <li class="toctree-l1"><a class="reference internal" href="{{ dir[dia] }}">{{ dia }}</a></li>
+                {% endfor %}
+            </ul>
+            <div id="searchbox" style="display: none" role="search">
+                <h3>Quick search</h3>
+                <div class="searchformwrapper">
+                    <form class="search" action="" method="get">
+                        <input type="text" name="q" />
+                        <input type="submit" value="Go" />
+                        <input type="hidden" name="check_keywords" value="yes" />
+                        <input type="hidden" name="area" value="default" />
+                    </form>
+                </div>
+            </div>
+            <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+    </div>
+
+    <div class="clearer"></div>
+{% endblock %}
