@@ -23,8 +23,8 @@
             </p>
             <h3><a href="#">内容大纲</a></h3>
             <ul>
-                {% for dia in dir %}
-                 <li class="toctree-l1"><a class="reference internal" href="{{ dir[dia] }}">{{ dia }}</a></li>
+                {% for key, value in dir.items() %}
+                 <li class="toctree-l1"><a class="reference internal" href="{{ value }}">{{ key }}</a></li>
                 {% endfor %}
             </ul>
             <div id="searchbox" style="display: none" role="search">
