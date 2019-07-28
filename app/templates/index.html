@@ -22,7 +22,6 @@
             <ul>
                 {% for key, value in dir.items() %}
                  <li class="toctree-l1"><a class="reference internal" href="{{ value }}">{{ key }}:{{ loop.index }}</a></li>
-                    {{ dir }}
                 {% endfor %}
             </ul>
             <div id="searchbox" style="display: none" role="search">
