@@ -6,17 +6,10 @@ from app.models import List
 
 
 @app.route('/')
-@app.route('/index')
+@app.route('/File/intro')
 def index():
     dirl = List().Dir
-    return render_template('index.html',
-                           dir=dirl)
-
-
-@app.route('/File/introduce')
-def intro():
-    dirl = List().Dir
-    return render_template('File/logisim.html',
+    return render_template('File/intro.html',
                            dir=dirl)
 
 

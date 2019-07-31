@@ -107,9 +107,15 @@ div.sphinxsidebar p.topless {
 }
  
 div.sphinxsidebar ul {
-    margin: 10px 5px 10px 20px;
+    margin: 10px 5px 10px 0px;
     padding: 0;
     color: #000;
+}
+
+div.sphinxsidebar li {
+    margin: 11px 5px 0px 20px;
+    padding: 0;
+    color: #007020;
 }
  
 div.sphinxsidebar a {

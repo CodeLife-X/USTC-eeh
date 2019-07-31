@@ -4,7 +4,7 @@
 
 class List(object):
     Dir = [
-        {'课程体系介绍': ''},
+        {'课程体系介绍': '/File/intro'},
         {'LogiSim工具': '/File/logisim'},
         {'Verilog语法': '/File/verilog'},
         {'FPGA原理': '/File/fpga'},

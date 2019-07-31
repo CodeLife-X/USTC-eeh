@@ -22,10 +22,12 @@
                 USTC
             </p>
             <h3><a href="#">内容大纲</a></h3>
-            <ul>
+            <ul class="">
                 {% for d in dir %}
                     {% for y in d %}
-                 <li class="toctree-l1"><a class="reference internal" href="{{ d[y] }}">{{ y }}</a></li>
+                        <!-- class="toctree-l1"
+                            class="reference internal"-->
+                 <li ><a href="{{ d[y] }}">{{ y }}</a></li>
                     {% endfor %}
                 {% endfor %}
             </ul>
