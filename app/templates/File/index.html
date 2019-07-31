@@ -1,0 +1,45 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+    <div class="documentwrapper">
+        <div class="bodywrapper">
+            <div class="body" role="main">
+                <div class="section">
+                    <h1>欢迎来到实验课程主页<a class="headerlink">¶</a></h1>
+                    <p>在这里，从门电路开始，一步一步设计出有限状态机</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="sphinxsidebar" >
+        <div class="sphinxsidebarwrapper" >
+            <p class="loogo">
+                USTC
+            </p>
+            <h3><a href="#">内容大纲</a></h3>
+            <ul>
+                {% for d in dir %}
+                    {% for y in d %}
+                 <li class="toctree-l1"><a class="reference internal" href="{{ d[y] }}">{{ y }}</a></li>
+                    {% endfor %}
+                {% endfor %}
+            </ul>
+            <div id="searchbox" style="display: none" role="search">
+                <h3>Quick search</h3>
+                <div class="searchformwrapper">
+                    <form class="search" action="" method="get">
+                        <input type="text" name="q" />
+                        <input type="submit" value="Go" />
+                        <input type="hidden" name="check_keywords" value="yes" />
+                        <input type="hidden" name="area" value="default" />
+                    </form>
+                </div>
+            </div>
+            <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+    </div>
+
+    <div class="clearer"></div>
+{% endblock %}
