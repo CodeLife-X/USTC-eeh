@@ -74,6 +74,7 @@ div.sphinxsidebar {
 div.sphinxsidebarwrapper{
     padding: 20px 0;
     background-color: #efefef;
+    position: relative;
 }
  
 div.sphinxsidebar h3,
@@ -131,6 +132,9 @@ div.sphinxsidebar input {
 div.sphinxsidebar input[type=text]{
     margin-left: 20px;
 }
+
+
+
  
 /* -- body styles ----------------------------------------------------------- */
  
