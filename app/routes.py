@@ -44,14 +44,14 @@ def IO():
 @app.route('/File/vivado')
 def vivado():
     dirl = List().Dir
-    return render_template('File/verilog.html',
+    return render_template('File/vivado.html',
                            dir=dirl)
 
 
 @app.route('/File/testbench')
 def testbench():
     dirl = List().Dir
-    return render_template('File/verilog.html',
+    return render_template('File/testbench.html',
                            dir=dirl)
 
 

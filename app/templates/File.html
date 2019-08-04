@@ -7,11 +7,13 @@
         <div class="bodywrapper">
             <div class="body" role="main">
                 <div class="section">
+                <span id="top"></span>
                 {% block File_content %}
 
 
 
                 {% endblock %}
+                <a href="#top">回到顶部</a>
                 </div>
             </div>
         </div>
@@ -23,10 +25,20 @@
             </p>
             <h3><a href="#">内容大纲</a></h3>
             <ul class="">
-                {% for d in dir %}
-                        <!-- class="toctree-l1"
-                            class="reference internal"-->
+                {% for d in dir %}<!-- class="toctree-l1"  class="reference internal"-->
+                     {% if d[1] == '/File/intro' %}
+                     <li style="font-size: 15px " >预备知识</li>
+                         <ul>
+                     {% endif %}
                  <li ><a href="{{ d[1] }}" title="{{ d[2] }}">{{ d[0] }}</a></li>
+                     {% if d[1] == '/File/testbench' %}
+                         </ul>
+                     <li style="font-size: 15px" >一些例子</li>
+                         <ul>
+                     {% endif %}
+                     {% if d[1] == '/File/FSM' %}
+                         </ul>
+                     {% endif %}
                 {% endfor %}
             </ul>
             <div id="searchbox" style="display: none" role="search">
