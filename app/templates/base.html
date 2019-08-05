@@ -9,14 +9,13 @@
 
         <!--引用本地文件-->
         <link rel="stylesheet" href="../static/css/nature.css" type="text/css" />
-        <link rel="stylesheet" href="../static/css/pygments.css" type="text/css" />
-        <link rel="stylesheet" type="text/css" href="../static/css/graphviz.css" />
+{#        <link rel="stylesheet" href="../static/css/basefile.css" type="text/css">#}
         <title>USTC数电实验主页</title>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     </head>
 
     <body>
-        <div class="related" >
+        <div class="header" >
             <ul>
                 <li class="right" style="margin-right: 10px">
                     <a href="#" title="其他">其他资源</a></li>
@@ -28,11 +27,12 @@
                 <li><a href="https://vlab.ustc.edu.cn" title="VLAB 实验中心">VLab</a> &#187;</li>
             </ul>
         </div>
+
         <div class="document">
         {% block content %}{% endblock %}
         </div >
 
-        <div class="related" >
+        <div class="header" >
             <ul>
                 <li class="right" style="margin-right: 10px">
                     <a href="#" title="其他">其他资源</a></li>
@@ -44,7 +44,7 @@
                 <li><a href="https://vlab.ustc.edu.cn" title="VLAB 实验中心">VLab</a> &#187;</li>
             </ul>
         </div>
-        <div class="footer" role="contentinfo">
+        <div id="footer" role="contentinfo">
     如果网页的浏览出现了问题或者你对网页的布局有什么建议，请联系我们：<a href="mailto:xys05@outlook.com">xys05@outlook.com</a>
         </div>
     </body>

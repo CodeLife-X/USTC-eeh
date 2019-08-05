@@ -6,7 +6,6 @@
     <div class="documentwrapper">
         <div class="bodywrapper">
             <div class="body" role="main">
-                <div class="section">
                 <span id="top"></span>
                 {% block File_content %}
 
@@ -14,17 +13,16 @@
 
                 {% endblock %}
                 <a href="#top">回到顶部</a>
-                </div>
             </div>
         </div>
     </div>
-    <div class="sphinxsidebar" >
-        <div class="sphinxsidebarwrapper" >
-            <p class="loogo">
+    <div class="catalogsidebar" >
+        <div class="catalogsidebarwrapper" >
+            <p id="logo">
                 USTC
             </p>
-            <h3><a href="#">内容大纲</a></h3>
-            <ul class="">
+            <h3>内容大纲</h3>
+            <ul class="linkk">
                 {% for d in dir %}<!-- class="toctree-l1"  class="reference internal"-->
                      {% if d[1] == '/File/intro' %}
                      <li style="font-size: 15px " >预备知识</li>
@@ -56,5 +54,5 @@
         </div>
     </div>
 
-    <div class="clearer"></div>
+    <div id="clearer"></div>
 {% endblock %}
