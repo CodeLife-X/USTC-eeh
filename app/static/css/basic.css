@@ -37,9 +37,10 @@ div.catalogsidebarwrapper {
 }
 
 div.catalogsidebar {
-    float: left;
+    /*float: left;*/
+    /*position: fixed;*/
     width: 290px;  /*CSS会选择这个属性而不是上面的*/
-    margin-left: -100%;  /*这个属性结合"documentwrapper"的"float"属性同时使用 真的是神奇啊*/
+    /*margin-left: -100%;  !*这个属性结合"documentwrapper"的"float"属性同时使用 真的是神奇啊*!*/
     font-size: 90%;
     word-wrap: break-word;
     overflow-wrap : break-word;

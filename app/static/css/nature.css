@@ -7,18 +7,18 @@ body {
     color: #37424A;
     margin: 0;
     padding: 0;
-    border-top: 5px solid #F05C56;
+    border-top: 2px solid #F05C56;
 }
 
 /*右边的文档浏览部分进行一些修饰*/
 div.documentwrapper {
-    float: left;
-    width: 100%;
+    float: right;
+    width: 990px;
 }
 
 /*设置左边距，用于放目录*/
 div.bodywrapper {
-    margin: 0 0 0 290px;
+    margin: 0 0 0 0p /*可有可无*/
 }
 
 hr {
@@ -55,7 +55,7 @@ div.header {
     line-height: 32px;
     color: #37424A;
     font-size: 100%;
-    border-top: #9C4850 5px solid;
+    border-top: #9C4850 2px solid;
 }
  
 div.header a {
