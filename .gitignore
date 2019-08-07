@@ -1,5 +1,6 @@
 Other/
 .idea/
 .DS_Store
-__pycache__/**
+app/__pycache__/**
 .git/**
+*.pyc
